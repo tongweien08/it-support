@@ -2,34 +2,43 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Support Center</title>
     <style>
-        body { font-family: sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
-        .header { background-color: #000; color: #fff; text-align: center; padding: 20px; font-size: 24px; font-weight: bold; }
-        .slogan { background-color: #000; color: #fff; text-align: center; padding: 15px; margin-bottom: 20px; font-size: 18px; }
-        .content { max-width: 500px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 8px; }
-        .price-table { width: 100%; border-collapse: collapse; }
-        .price-table td { padding: 10px; border-bottom: 1px solid #eee; }
-        .contact-btn { display: block; background: #0088cc; color: white; text-align: center; padding: 15px; text-decoration: none; border-radius: 5px; margin-top: 20px; font-weight: bold; }
+        body { background: #0a0a0a; color: #00ff41; font-family: 'Courier New', monospace; margin: 0; padding: 20px; }
+        .container { max-width: 800px; margin: auto; background: rgba(20, 20, 20, 0.8); padding: 30px; border: 1px solid #333; border-radius: 15px; backdrop-filter: blur(10px); }
+        .header { text-align: center; border-bottom: 2px solid #00ff41; padding-bottom: 20px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 3px; }
+        .section-title { color: #fff; margin-top: 30px; border-left: 5px solid #00ff41; padding-left: 10px; }
+        .feedback-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
+        .feedback-card { background: #1a1a1a; padding: 15px; border-radius: 8px; border: 1px solid #444; }
+        .contact-btn { display: block; background: #00ff41; color: #000; text-align: center; padding: 15px; text-decoration: none; font-weight: bold; margin-top: 30px; transition: 0.3s; }
+        .contact-btn:hover { background: #fff; box-shadow: 0 0 20px #00ff41; }
     </style>
 </head>
 <body>
+    <div class="container">
+        <div class="header">
+            <h1>IT SUPPORT CENTER</h1>
+            <p>SYSTEM RECOVERY & HARDWARE MAINTAIN</p>
+        </div>
 
-<div class="header">IT SUPPORT CENTER</div>
-<div class="slogan">电脑坏了吗？ 来找我吧！</div>
+        <div class="section-title">服务列表</div>
+        <table style="width:100%; color: #ddd;">
+            <tr><td>重装系统</td><td>RM 50</td></tr>
+            <tr><td>深度文件修复</td><td>RM 40 - 100</td></tr>
+        </table>
 
-<div class="content">
-    <table class="price-table">
-        <tr><td>重装系统</td><td><strong>RM 50</strong></td></tr>
-        <tr><td>软件下载 (单件)</td><td><strong>RM 0.5</strong> <small>(量大可商议)</small></td></tr>
-        <tr><td>音乐拷贝 (每1GB)</td><td><strong>RM 1</strong> <small>(U盘另计)</small></td></tr>
-        <tr><td>文件修复</td><td><strong>RM 30</strong></td></tr>
-        <tr><td>深度文件修复</td><td><strong>RM 40 - 100</strong></td></tr>
-    </table>
-    
-    <a href="https://t.me/itsupport08" class="contact-btn">Telegram 咨询点击这里</a>
-</div>
+        <div class="section-title">客户评价</div>
+        <div class="feedback-grid">
+            <div class="feedback-card">
+                <p>"修复得非常快！资料全部找回来了，救命恩人！"</p>
+                <small>— 张先生</small>
+            </div>
+            <div class="feedback-card">
+                <p>"第二次找他重装系统，操作非常专业，而且还会教我保养。"</p>
+                <small>— 盈琇</small>
+            </div>
+        </div>
 
+        <a href="https://t.me/itsupport08" class="contact-btn">初始化通讯链路 (Telegram)</a>
+    </div>
 </body>
 </html>
