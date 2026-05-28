@@ -2,43 +2,46 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT SUPPORT CENTER</title>
     <style>
-        body { background: #0a0a0a; color: #00ff41; font-family: 'Courier New', monospace; margin: 0; padding: 20px; }
-        .container { max-width: 800px; margin: auto; background: rgba(20, 20, 20, 0.8); padding: 30px; border: 1px solid #333; border-radius: 15px; backdrop-filter: blur(10px); }
-        .header { text-align: center; border-bottom: 2px solid #00ff41; padding-bottom: 20px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 3px; }
-        .section-title { color: #fff; margin-top: 30px; border-left: 5px solid #00ff41; padding-left: 10px; }
-        .feedback-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
-        .feedback-card { background: #1a1a1a; padding: 15px; border-radius: 8px; border: 1px solid #444; }
-        .contact-btn { display: block; background: #00ff41; color: #000; text-align: center; padding: 15px; text-decoration: none; font-weight: bold; margin-top: 30px; transition: 0.3s; }
-        .contact-btn:hover { background: #fff; box-shadow: 0 0 20px #00ff41; }
+        :root { --neon-green: #00ff41; --bg-dark: #050505; }
+        body { background-color: var(--bg-dark); color: #fff; font-family: 'Segoe UI', Roboto, sans-serif; margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+        .card { width: 100%; max-width: 450px; border: 1px solid #1a1a1a; padding: 50px 40px; border-radius: 30px; background: #0a0a0a; box-shadow: 0 20px 50px rgba(0,0,0,0.8); }
+        h1 { color: var(--neon-green); font-size: 26px; margin-bottom: 8px; letter-spacing: 1px; }
+        .subtitle { color: #555; font-size: 13px; margin-bottom: 40px; text-transform: uppercase; letter-spacing: 4px; }
+        .service-row { display: flex; justify-content: space-between; align-items: center; padding: 18px 0; border-bottom: 1px solid #121212; font-size: 15px; }
+        .service-name { color: #eee; }
+        .price { color: var(--neon-green); font-weight: 600; }
+        .btn { display: block; margin-top: 50px; padding: 18px; background: var(--neon-green); color: #000; text-align: center; text-decoration: none; border-radius: 15px; font-weight: bold; transition: all 0.4s ease; letter-spacing: 1px; }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,255,65,0.2); }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>IT SUPPORT CENTER</h1>
-            <p>SYSTEM RECOVERY & HARDWARE MAINTAIN</p>
-        </div>
 
-        <div class="section-title">服务列表</div>
-        <table style="width:100%; color: #ddd;">
-            <tr><td>重装系统</td><td>RM 50</td></tr>
-            <tr><td>深度文件修复</td><td>RM 40 - 100</td></tr>
-        </table>
+<div class="card">
+    <h1>IT SUPPORT CENTER</h1>
+    <div class="subtitle">PREMIUM TECH SOLUTIONS</div>
 
-        <div class="section-title">客户评价</div>
-        <div class="feedback-grid">
-            <div class="feedback-card">
-                <p>"修复得非常快！资料全部找回来了，救命恩人！"</p>
-                <small>— 张先生</small>
-            </div>
-            <div class="feedback-card">
-                <p>"第二次找他重装系统，操作非常专业，而且还会教我保养。"</p>
-                <small>— 盈琇</small>
-            </div>
-        </div>
-
-        <a href="https://t.me/itsupport08" class="contact-btn">初始化通讯链路 (Telegram)</a>
+    <div class="service-row">
+        <span class="service-name">系统重装</span>
+        <span class="price">RM 50</span>
     </div>
+    <div class="service-row">
+        <span class="service-name">软件安装 (单项)</span>
+        <span class="price">RM 0.5</span>
+    </div>
+    <div class="service-row">
+        <span class="service-name">数据拷贝 (1GB)</span>
+        <span class="price">RM 1</span>
+    </div>
+    <div class="service-row">
+        <span class="service-name">文件/深度修复</span>
+        <span class="price">RM 30 - 100</span>
+    </div>
+
+    <a href="https://t.me/itsupport08" class="btn">联系技术专家</a>
+</div>
+
 </body>
 </html>
