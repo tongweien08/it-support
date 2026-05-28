@@ -6,41 +6,84 @@
     <title>IT SUPPORT CENTER</title>
     <style>
         :root { --neon-green: #00ff41; --bg-dark: #050505; }
-        body { background-color: var(--bg-dark); color: #fff; font-family: 'Segoe UI', Roboto, sans-serif; margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
-        .card { width: 100%; max-width: 450px; border: 1px solid #1a1a1a; padding: 50px 40px; border-radius: 30px; background: #0a0a0a; box-shadow: 0 20px 50px rgba(0,0,0,0.8); }
-        h1 { color: var(--neon-green); font-size: 26px; margin-bottom: 8px; letter-spacing: 1px; }
-        .subtitle { color: #555; font-size: 13px; margin-bottom: 40px; text-transform: uppercase; letter-spacing: 4px; }
-        .service-row { display: flex; justify-content: space-between; align-items: center; padding: 18px 0; border-bottom: 1px solid #121212; font-size: 15px; }
-        .service-name { color: #eee; }
-        .price { color: var(--neon-green); font-weight: 600; }
-        .btn { display: block; margin-top: 50px; padding: 18px; background: var(--neon-green); color: #000; text-align: center; text-decoration: none; border-radius: 15px; font-weight: bold; transition: all 0.4s ease; letter-spacing: 1px; }
-        .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,255,65,0.2); }
+        body { background-color: var(--bg-dark); color: #fff; font-family: 'Segoe UI', Roboto, sans-serif; margin: 0; padding: 40px 20px; display: flex; justify-content: center; }
+        .card { width: 100%; max-width: 500px; border: 1px solid #1a1a1a; padding: 40px; border-radius: 20px; background: #0a0a0a; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        h1 { color: var(--neon-green); font-size: 24px; margin-bottom: 5px; }
+        .subtitle { color: #555; font-size: 12px; margin-bottom: 30px; text-transform: uppercase; letter-spacing: 3px; }
+        .btn { display: block; padding: 15px; background: var(--neon-green); color: #000; text-align: center; text-decoration: none; border-radius: 10px; font-weight: bold; margin-bottom: 40px; transition: 0.3s; }
+        .btn:hover { box-shadow: 0 0 15px var(--neon-green); transform: translateY(-2px); }
+        .section-header { color: #888; font-size: 11px; margin: 30px 0 20px 0; text-transform: uppercase; letter-spacing: 2px; border-bottom: 1px solid #1a1a1a; padding-bottom: 5px; }
+        .row { display: flex; justify-content: space-between; padding: 12px 0; font-size: 14px; color: #eee; }
+        .price { color: var(--neon-green); font-weight: bold; }
+        .tutorial-item { color: #ccc; margin-bottom: 30px; font-size: 14px; line-height: 1.8; }
+        .tutorial-item strong { color: #fff; display: block; margin-bottom: 8px; font-size: 15px; }
     </style>
 </head>
 <body>
 
 <div class="card">
     <h1>IT SUPPORT CENTER</h1>
-    <div class="subtitle">PREMIUM TECH SOLUTIONS</div>
-
-    <div class="service-row">
-        <span class="service-name">系统重装</span>
-        <span class="price">RM 50</span>
-    </div>
-    <div class="service-row">
-        <span class="service-name">软件安装 (单项)</span>
-        <span class="price">RM 0.5</span>
-    </div>
-    <div class="service-row">
-        <span class="service-name">数据拷贝 (1GB)</span>
-        <span class="price">RM 1</span>
-    </div>
-    <div class="service-row">
-        <span class="service-name">文件/深度修复</span>
-        <span class="price">RM 30 - 100</span>
-    </div>
+    <div class="subtitle">Tech Solutions & Knowledge Base</div>
 
     <a href="https://t.me/itsupport08" class="btn">联系技术专家</a>
+
+    <div class="section-header">服务报价</div>
+    <div class="row"><span>系统重装</span> <span class="price">RM 50</span></div>
+    <div class="row"><span>软件安装</span> <span class="price">RM 0.5 起</span></div>
+    <div class="row"><span>数据拷贝 (1GB)</span> <span class="price">RM 1</span></div>
+    <div class="row"><span>文件/深度修复</span> <span class="price">RM 30-100</span></div>
+
+    <div class="section-header">技术知识库 (新手必读)</div>
+    
+    <div class="tutorial-item">
+        <strong>1. 笔记本电脑该怎么选？</strong>
+        · **办公用**：选轻薄机型，内存一定要 16GB，不然用起来会很卡。<br>
+        · **玩游戏/做设计**：必须选带独立显卡的机型。<br>
+        · **千万别买**：处理器的名字里如果带“Celeron”或“Atom”，千万别买，那已经过时了。<br>
+        · **建议**：RM 2k 买稳定办公的；RM 3.5k 买全能好用的；RM 6k 以上可以买到各方面都顶尖的。
+    </div>
+
+    <div class="tutorial-item">
+        <strong>2. 如何制作系统安装盘？</strong>
+        第一步：准备一个 8GB 以上的空 U 盘插在电脑上。<br>
+        第二步：去微软官网下载“Media Creation Tool”小工具。<br>
+        第三步：打开工具，选“为另一台电脑创建安装介质”，跟着提示点下一步，等待自动写入即可。
+    </div>
+
+    <div class="tutorial-item">
+        <strong>3. 如何重新安装电脑系统？</strong>
+        第一步：把做好的安装 U 盘插到电脑上，重启电脑。<br>
+        第二步：开机不停按快捷键（通常是 F12、F2 或 Esc）进入启动菜单，选 U 盘启动。<br>
+        第三步：跟着中文界面提示，选择要重装的硬盘分区（建议格式化 C 盘），点下一步等待安装完毕。
+    </div>
+
+    <div class="tutorial-item">
+        <strong>4. 打印机墨盒怎么换？</strong>
+        第一步：开机并打开前面的盖子，等墨车自动滑到中间。<br>
+        第二步：按住旧墨盒的卡扣，把它取出来。<br>
+        第三步：撕掉新墨盒上的保护膜（注意不要用手碰到金属触点）。<br>
+        第四步：把新墨盒斜着插进卡槽，听到“咔哒”一声表示装好，关上盖子会自动校准。
+    </div>
+
+    <div class="tutorial-item">
+        <strong>5. 电脑需要杀毒软件吗？</strong>
+        **不需要额外买！** Windows 自带的杀毒功能已经非常够用了。只要你不乱点网页上的不明链接，不下载盗版或来源不明的程序，你的电脑是非常安全的。安装太多的第三方杀毒软件反而会把电脑拖慢。
+    </div>
+
+    <div class="tutorial-item">
+        <strong>6. 如何彻底卸载程序？</strong>
+        第一步：点电脑左下角的“开始”图标，进入“设置”。<br>
+        第二步：点击“应用”，再点“安装的应用”。<br>
+        第三步：找到你想删除的软件，点右侧的三个点，选“卸载”。<br>
+        第四步：如果有残留文件夹，去 C 盘的“Program Files”里手动删除对应文件夹即可。
+    </div>
+
+    <div class="tutorial-item">
+        <strong>7. 打印机该怎么选？</strong>
+        · **喷墨打印机**：适合家里打印彩色照片，但久了不用容易堵头。<br>
+        · **激光打印机**：打印文字非常快，适合办公，耗材是粉末状，不会干掉。<br>
+        · **针式打印机**：专门用来打印多联发票或快递单的，声音很大，但非常耐用。
+    </div>
 </div>
 
 </body>
